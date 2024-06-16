@@ -30,7 +30,7 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->subject('Contato - PsicoQ')
+        return $this->subject('Contato - Clinica Mentalis')
                     ->view('emails.meu_email');
     }
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PsicologoController;
 use App\Http\Controllers\SecretariaController;
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\FormularioController;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -52,3 +53,13 @@ Route::put('/update-ficha/{id}', [PsicologoController::class, 'updateFicha'])->n
 Route::post('/api/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/download-atestado', [DownloadController::class, 'downloadDocxAtestado'])->name('download.atestado');
 Route::get('/download-encaminhamento', [DownloadController::class, 'downloadDocxEncaminhamento'])->name('download.encaminhamento');
+
+Route::get('/formulario', [FormularioController::class, 'exibirFormulario'])->name('formulario');
+Route::post('/enviar-email', [FormularioController::class, 'enviarEmail'])->name('enviar.email');
+
+Route::get('/formulario', function () {
+    return view('formulario');
+});
+
+//Route::post('/enviar-email', [ContactController::class, 'sendEmail']);
+

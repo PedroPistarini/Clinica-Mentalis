@@ -365,8 +365,8 @@ class ComposerStaticInit8f49b8ccd233864bea20920d8d0485fe
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -562,6 +562,7 @@ class ComposerStaticInit8f49b8ccd233864bea20920d8d0485fe
         'App\\Http\\Controllers\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\DownloadController' => __DIR__ . '/../..' . '/app/Http/Controllers/DownloadController.php',
+        'App\\Http\\Controllers\\FormularioController' => __DIR__ . '/../..' . '/app/Http/Controllers/FormularioController.php',
         'App\\Http\\Controllers\\PacienteController' => __DIR__ . '/../..' . '/app/Http/Controllers/PacienteController.php',
         'App\\Http\\Controllers\\PsicologoController' => __DIR__ . '/../..' . '/app/Http/Controllers/PsicologoController.php',
         'App\\Http\\Controllers\\SecretariaController' => __DIR__ . '/../..' . '/app/Http/Controllers/SecretariaController.php',
@@ -578,6 +579,7 @@ class ComposerStaticInit8f49b8ccd233864bea20920d8d0485fe
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Mail\\Contact' => __DIR__ . '/../..' . '/app/Mail/Contact.php',
+        'App\\Mail\\NomeDoEmail' => __DIR__ . '/../..' . '/app/Mail/NomeDoEmail.php',
         'App\\Models\\Agendamento' => __DIR__ . '/../..' . '/app/Models/Agendamento.php',
         'App\\Models\\Paciente' => __DIR__ . '/../..' . '/app/Models/Paciente.php',
         'App\\Models\\Psicologo' => __DIR__ . '/../..' . '/app/Models/Psicologo.php',

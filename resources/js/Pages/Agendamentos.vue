@@ -23,7 +23,7 @@ defineProps({
       </h2>
     </template>
     <div class="container">
-      <h2 class="titulo-secao">Agendamentos Passados</h2>
+      <h2 class="items-center justify-center titulo-secao">Agendamentos Passados</h2>
       <table class="tabela">
         <thead>
           <tr>

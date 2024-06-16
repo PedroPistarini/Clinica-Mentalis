@@ -63,7 +63,7 @@ async function pesquisacep() {
         <Head title="Register" />
 
         <form @submit.prevent="submit">
-            <div>
+            <div class=" justify-center items-center flex">
                 <InputLabel for="permissao"/>
                 <div>
                   <label>
@@ -77,26 +77,26 @@ async function pesquisacep() {
                 </div>
                 <InputError class="mt-2" :message="form.errors.permissao" />
             </div>
-            <div>
-                <InputLabel for="name" value="Name" />
+            <div class="mt-4">
+                <InputLabel for="name" value="Nome" />
                 <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
                 <InputError class="mt-2" :message="form.errors.name" />
             </div>
 
-            <div>
+            <div class="mt-4">
                 <InputLabel for="cep" value="CEP" />
                 <TextInput id="cep" v-model="form.cep" @blur="pesquisacep" type="text" class="mt-1 block w-full" />
                 <InputError :message="form.errors.cep" class="mt-2" />
             </div>
 
-            <div>
+            <div class="mt-4">
                 <InputLabel for="endereco" value="Endereço" />
                 <TextInput id="endereco" v-model="form.endereco" type="text" class="mt-1 block w-full"  />
                 <InputError :message="form.errors.endereco" class="mt-2" />
             </div>
             
-            <div>
-                <InputLabel for="telefone" value="telefone" />
+            <div class="mt-4">
+                <InputLabel for="telefone" value="Telefone" />
                 <TextInput id="telefone" type="text" class="mt-1 block w-full" v-model="form.telefone" required autocomplete="telefone" />
                 <InputError class="mt-2" :message="form.errors.telefone" />
             </div>

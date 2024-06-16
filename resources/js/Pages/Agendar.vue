@@ -7,7 +7,6 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 
 import axios from 'axios';
 
-
 defineProps({
   psicologos: Array,
   agendamentos: Array,
@@ -31,7 +30,6 @@ const submitForm = async () => {
     console.error('Erro ao enviar o formulário:', error);
   }
 };
-
 </script>
 
 <template>
@@ -94,10 +92,12 @@ const submitForm = async () => {
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
 .page {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-  color: #333;
+  font-family: 'Playfair Display', serif;
+  background-color: #f4f4f9;
+  color: #2c3e50;
   height: 100%;
   width: 100%;
   display: flex;
@@ -112,38 +112,40 @@ const submitForm = async () => {
 }
 
 .button {
-  background-color: #007bff;
+  background-color: #3498db;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 12px 24px;
+  font-size: 18px;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #2980b9;
+  transform: scale(1.05);
 }
 
 .agenda-container {
-  padding: 20px; /* Espaçamento entre as bordas da página */
+  padding: 30px; /* Espaçamento entre as bordas da página */
 }
 
 .agenda {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: space-between; /* Separar as caixas */
 }
 
 .item {
-  border: 1px solid gray;
-  padding: 20px;
-  width: calc(33.33% - 20px); /* Definindo a largura para 1/3 do espaço disponível */
+  border: 1px solid #bdc3c7;
+  padding: 25px;
+  width: calc(33.33% - 30px); /* Definindo a largura para 1/3 do espaço disponível */
   text-align: center;
-  border-radius: 10px; /* Bordas arredondadas nas caixas */
-  background-color: #f9f9f9; /* Adicione uma cor de fundo para melhor visualização */
+  border-radius: 15px; /* Bordas arredondadas nas caixas */
+  background-color: #ffffff; /* Adicione uma cor de fundo para melhor visualização */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-bottom: 1rem; /* Margem inferior de 1 rem para separação entre os itens */
 }
 
@@ -151,38 +153,44 @@ form {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #ecf0f1;
+  border-radius: 10px;
   background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 div {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 input,
 select,
 button {
   width: 100%;
-  padding: 8px;
+  padding: 12px;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 button {
-  background: #007bff;
+  background: #006503;
   color: #fff;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background: #0056b3;
+  background: #003116;
+  transform: scale(1.05);
 }
 
 .radio-button {
@@ -192,7 +200,7 @@ button:hover {
   width: 20px;
   height: 20px;
   margin: 0;
-  border: 2px solid #007bff;
+  border: 2px solid #006503;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
@@ -204,7 +212,7 @@ button:hover {
   display: block;
   width: 10px;
   height: 10px;
-  background: #007bff;
+  background: #003116;
   border-radius: 50%;
   position: absolute;
   top: 50%;
